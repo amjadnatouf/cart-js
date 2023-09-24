@@ -32,11 +32,12 @@
   border-top: 1px solid #eee;
 }
 
-@media screen and (min-width: 992px) {
-  .card {
-  }
-
-  .card img{
-  }
-
+.top {
+  top: -3px;
+  right: -3px;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  font-size: 12px;
+  padding: .5px;
 }

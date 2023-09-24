@@ -5,9 +5,12 @@ const checkout = document.querySelector("#checkout");
 const total = document.querySelector("#total");
 const cardImages = document.querySelectorAll(".card img");
 const cartModal = document.getElementById("cartModal");
+const itemsCount = document.getElementById("items-count");
 let totalPrice = 0;
+var itemscounter = 0;
 
 function addToCart(productName, price, imgSrc) {
+  itemscounter++;
   if (cartItems.innerHTML != "") {
     emptyCart.style.display = "none";
   }
@@ -23,6 +26,7 @@ function addToCart(productName, price, imgSrc) {
       </div>
   `;
   totalPrice += price;
+  itemsCount.textContent = itemscounter;
 }
 
 buttons.forEach((btn) => {
